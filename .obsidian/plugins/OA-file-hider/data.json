@@ -1,0 +1,11 @@
+{
+  "hidden": true,
+  "hiddenList": [
+    "node_modules",
+    "public",
+    "src/components",
+    "src/layouts",
+    "src/pages",
+    "src/styles"
+  ]
+}
