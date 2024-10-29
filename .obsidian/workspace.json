@@ -11,10 +11,14 @@
             "id": "54b387d8b234daa8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "src/content/blog/first-post.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "first-post"
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "src/content/blog/first-post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for first-post"
             }
           },
           {
@@ -107,11 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "src/content/blog/first-post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from first-post"
             }
           },
           {
@@ -132,9 +138,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "src/content/blog/first-post.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of first-post"
             }
           },
           {
@@ -165,6 +173,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8597b47acbc6cbeb",
-  "lastOpenFiles": []
+  "active": "54b387d8b234daa8",
+  "lastOpenFiles": [
+    "src/content/blog/markdown-style-guide.md",
+    "src/content/blog/second-post.md",
+    "src/content/blog/third-post.md",
+    "README.md"
+  ]
 }
