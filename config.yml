@@ -1,1 +1,3 @@
-files_origin: D:\Users\richnguon\Desktop\obsidian-astro-demo\src\content\blog
+files_origin: .\src\content\blog_temp
+export_target: .\src\pages
+title: graph
