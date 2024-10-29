@@ -3,9 +3,10 @@
   "hiddenList": [
     "node_modules",
     "public",
-    "src/components",
-    "src/layouts",
+    "src/lib",
     "src/pages",
-    "src/styles"
+    "src/styles",
+    "src/components",
+    "src/layouts"
   ]
 }
