@@ -1,0 +1,40 @@
+name: Cosma Graph Gen
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the code from the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Set up Node.js (example dependency)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Replace with your desired version
+
+      # Install a dependency in the root folder
+      - name: Install Dependency
+        run: |
+          npm install @graphlab-fr/cosma -g
+      - name: Cosma Convert
+        run: |
+          npm run cosma-convert
+      - name: Cosma Work
+        run: |
+          cosma modelize
+      - name: Clean up
+        run: |
+          rm -r ./src/content/blog_temp
+
+
