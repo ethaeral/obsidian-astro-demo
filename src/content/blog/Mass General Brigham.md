@@ -1,3 +1,9 @@
+---
+title: "Welcome to my blog"
+author: ben-holmes # references `src/content/authors/ben-holmes.json`
+pubDate: 01/01/01
+description: Required
+---
 #MGB-Contract
 
 ## Can an LICSW worker bill hospitals
