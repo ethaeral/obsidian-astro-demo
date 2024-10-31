@@ -38,14 +38,15 @@ jobs:
           rm -r ./src/content/blog_temp
       # Commit the generated file
       - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Add generated file"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
         
 
 
