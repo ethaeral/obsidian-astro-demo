@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "cosma": "python3 ./graph_gen/main.py -i ./src/content/blog -o ./src/content/blog_temp",
-    "graph": "cosma modelize && rm -r ./src/content/blog_temp"
+    "cosma-convert": "cosma modelize && rm -r ./src/content/blog_temp"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
