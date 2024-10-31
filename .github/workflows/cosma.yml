@@ -14,9 +14,10 @@ jobs:
 
     steps:
       # Check out the code from the repository
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
+      - uses: actions/checkout@main
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0    
       # Set up Node.js (example dependency)
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -40,7 +41,7 @@ jobs:
       - name: GitHub Commit & Push
         uses: actions-js/push@v1.5
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
         
 
